@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+/* #world-map{
+  float:"left";
+} */
+div{
+  display:flex
+}
+#frame > div{
+display:flex;
+}
+.chart-row > div {
+  margin-bottom: 15px;
+  margin-left:40%;
+  /* display: flex !important; */
+  
+ }
+ .fusioncharts-container{
+   margin:0 0 0 40% !important;
+ }
+ #runs{
+   margin-left:40%;
+ }
+.inline {
+  width: 48%;
+  margin-left: 40%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
