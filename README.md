@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Career Analysis Of Sachin Tendulkar
+A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)
+## Getting Started
+Clone the repository
+### Prerequisites
+Install node
+### Running the code
+1. cd into the project folder and install dependencies\
+```npm install```
+2. Copy all the files from the folder *map_files* to *node_modules/fusioncharts/maps*
+3. Run node server\
+```node server.js```
+4. Run the React Application\
+```npm start```
+5. The application opens up in the browser
+### An Overview of the Dashboard
+1. Each country he has ever played with (except Bermuda) is marked with a color that represents his Win Ratio(%) against that country.
+2. Win Ratio is calculated using the formula : (No. of Wins/Total matches played against a nation) X 100  
+3. Clicking on a marked country in the map shows its corresponding year-wise batting score analysis.
+4. Countries are divided in Continents, which can be switched from the navbar
+5. The Histogram depicts the distribution of Runs Scored in his entire career.
+6. An analysis of all the centuries (half, full and double) is represented using a Line Graph
+7. A Bar Graph summarising the result of all the matches he has played (Country-Wise)
+8. A Pie Chart giving the gist of total wins he has had in his career.
+### Libraries Used
+- FusionCharts
+- ReCharts
+- Redux
+- React
+- Axios
+### Built With
+- Express - Web framework for Nodejs
+- Node.js - JavaScript Runtime
+- Redux - A JavaScript library for State Management
+- React - A JavaScript library for building UI Components
+- React-Bootstrap - A front-end frameork for react
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
