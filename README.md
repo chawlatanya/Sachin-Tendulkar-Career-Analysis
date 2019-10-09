@@ -7,7 +7,7 @@ Install node
 ### Running the code
 1. cd into the project folder and install dependencies
 ```npm install```
-2. Copy all the files from the folder ####map_files to node_modules/fusioncharts/maps
+2. Copy all the files from the folder map_files to node_modules/fusioncharts/maps
 3. Run node server
 ```node server.js```
 4. Run the React Application\
