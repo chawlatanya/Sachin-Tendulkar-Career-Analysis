@@ -21,16 +21,16 @@ The Histogram depicts the distribution of Runs Scored in his entire career.\
 An analysis of all the centuries (half, full and double) is represented using a Line Graph\
 A Bar Graph summarising the result of all the matches he has played (Country-Wise)\
 A Pie Chart giving the gist of total wins he has had in his career.\
-### Libraries Used\
+### Libraries Used
 - FusionCharts
 - ReCharts
 - Redux
 - React
 - Axios
 ### Built With\
-- Express - Web framework for Nodejs\
-- Node.js - JavaScript Runtime\
-- Redux - A JavaScript library for State Management\
+- Express - Web framework for Nodejs
+- Node.js - JavaScript Runtime
+- Redux - A JavaScript library for State Management
 - React - A JavaScript library for building UI Components
 - React-Bootstrap - A front-end frameork for react
 
