@@ -1,14 +1,14 @@
 # sachin
-A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)
-##Getting Started
+A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)\
+## Getting Started
 Clone the repository
-###Prerequisites
+### Prerequisites
 Install node
-###Running the code
+### Running the code
 cd into the project folder and install dependencies
 ```npm install```
 Copy all the files from the folder ####map_files to node_modules/fusioncharts/maps
-Run node server
+Run node server\
 ```node server.js```
 Run the React Application
 ```npm start```
