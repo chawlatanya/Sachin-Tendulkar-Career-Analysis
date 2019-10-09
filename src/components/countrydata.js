@@ -26,7 +26,7 @@ const CustomizedAxisTick=(props)=>{
 
 
 const CountryData=(props)=>{
-    //const[countryData,setCountryData]=useState([])
+ 
     useEffect(()=>{
        props.getCountryStats()
       },[])

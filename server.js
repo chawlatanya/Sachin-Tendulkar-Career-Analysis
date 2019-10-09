@@ -16,7 +16,6 @@ let northamerica_spec=[];
 let win_ratio={}; //{pak:[wins,total,ratio]}
 
 function parse(data){
-    //console.log(m.opposition)
     data.forEach((m)=>{
     if(win_ratio.hasOwnProperty(m.opposition))
     {
@@ -48,9 +47,7 @@ csv()
     .fromFile('./sachin.csv')
     .then((d)=>{
               d.forEach((m)=> {
-            //  console.log(m);
               let t=m.opposition;
-              //console.log(typeof t);
               t=t.split('');
               t.splice(0,2);
               t=t.join('');
@@ -69,35 +66,30 @@ csv()
     .fromFile('./asia.csv')
     .then((d)=>{
         asia_spec=d
-     //   console.log(asia_spec)
     }
     ) 
 csv()
     .fromFile('./oceania.csv')
     .then((d)=>{
         oceania_spec=d
-      //  console.log(oceania_spec)
     }
     )
 csv()
     .fromFile('./northamerica.csv')
     .then((d)=>{
         northamerica_spec=d
-      //  console.log(northamerica_spec)
     }
     ) 
 csv()
     .fromFile('./europe.csv')
     .then((d)=>{
         europe_spec=d
-      //  console.log(europe_spec)
     }
     )
 csv()
     .fromFile('./africa.csv')
     .then((d)=>{
         africa_spec=d
-      //  console.log(africa_spec)
     }
     )           
 
@@ -114,8 +106,8 @@ app.get('/continent-data', (req, res) => {
     let names=["asia","europe","northamericawcaribbean","africa","oceania"]
     let x={} ; let continent=""
     for (const country in win_ratio) {
-       console.log(country);
-       console.log(list)
+       //console.log(country);
+      // console.log(list)
        
         list.every((spec,index) =>{
              x=spec.find((c)=>country===c.Label);
@@ -143,7 +135,6 @@ app.get('/country-data',(req,res)=>{
     data.forEach((m)=>{
        let c;   let batting_score=0;
         if(m.batting_score!=="DNB"&& m.batting_score!=="TDNB" && m.batting_score){
-          //  console.log(m.batting_score)
             if(m.batting_score.indexOf('*')===-1)    
                  batting_score=Number.parseInt(m.batting_score)
             else
@@ -153,20 +144,20 @@ app.get('/country-data',(req,res)=>{
                   batting_score=Number.parseInt(x.join(''))
 
                 }
-           // console.log(bs.push(batting_score))
+          
             let year=m.date.split('').slice(-4).join('')
-              //  console.log(runs.hasOwnProperty(m.opposition))
+             
                 
             if(runs.hasOwnProperty(m.opposition))
             {
-                 c=m.opposition;// console.log(c)
+                 c=m.opposition;
                 let dataPoint=runs[c].find((x)=>x.year===year)
                 if(dataPoint)
                         dataPoint.value=dataPoint.value+batting_score;
 
                 else
                 {
-                //    console.log("c ic",c)
+              
                     runs[c].push({year:year,value:batting_score})
                 }
             }       
@@ -181,27 +172,6 @@ app.get('/country-data',(req,res)=>{
     })
     res.send(runs)  
 })
-
-
-
-
-
-// app.get('/asia-data', (req, res) => {
-//     let asia_data=[];
-//     for (const country in win_ratio) {
-//        console.log(country);
-//         let x=asia_spec.find((c)=>country===c.Label);
-//         if(x){
-//             console.log(x)
-//             let temp={
-//                 id:x.ID,
-//                 value:win_ratio[country][2]
-//             }
-//             asia_data.push(temp);
-//     }
-// }
-// res.send(asia_data);           
-// })
 
 let range=[0,0]
 const call_range=(x)=>range=x;
@@ -237,8 +207,6 @@ app.get('/histogram-data',(req,res)=>{
     res.send(runs);
     console.log(runs)
 })
-
-// const call_total=(total)=>centuries=total;
 
 app.get("/get-stats",(req,res)=>{
     const total=[0,0,0,0,0,0]; //half,full,double,matches,wickets,runs

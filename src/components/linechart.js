@@ -40,28 +40,14 @@ const LineGraph=(props)=>{
     },[])
 
     return(
-    //<div style={{display:"flex","justifyContent":"space-evenly","marginTop":"30px"}}>
+  
         <Card style={{ "boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}} >
             <Card.Header>
                 <center style={{fontFamily: 'Crimson Text, serif'}}><h2>A representation of number of centuries made</h2></center>
             </Card.Header>   
-           
-                <SimpleLineChart data={props.centuryData}/>
+        <SimpleLineChart data={props.centuryData}/>
             
         </Card>)}
-        {/* <div style={{display:"flex",flexDirection:"column",justifyContent:"space-around",}} >
-            <Card border="info" style={{padding:"0 30%","boxShadow": "0 4px 8px 0 rgba(0,0,0,0)"}} >
-                <Card.Body><center>{total[0]} <br/> Half Centuries</center></Card.Body>
-            </Card>
-            <Card  border="success" style={{padding:"0 30%","boxShadow": "0 4px 8px 0 rgba(0,0,0,0)"}}>
-                <Card.Body><center>{total[1]} <br/>Full Centuries</center></Card.Body>
-            </Card>
-            <Card  border="danger" style={{padding:"0 30%","boxShadow": "0 4px 8px 0 rgba(0,0,0,0)"}}>
-                <Card.Body><center>{total[2]} <br/> Double Century</center></Card.Body>
-            </Card>
-        </div>  
-          </div>*/}
-    //</div>
 const mapStateToProps=state=>({
     ...state,
     centuryData:state.data.centuryData

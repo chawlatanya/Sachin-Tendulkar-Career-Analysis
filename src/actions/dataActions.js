@@ -59,7 +59,7 @@ export const getCountryStats=()=>(dispatch)=>{
 }
 
 export const getLineData=()=>(dispatch)=>{
-    console.log("action launched")
+    //console.log("action launched")
     axios
         .get("http://localhost:3001/century-analysis")
         .then((response)=>{

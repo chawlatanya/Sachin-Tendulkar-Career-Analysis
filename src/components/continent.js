@@ -82,8 +82,7 @@ const Map=({data,continent,setCountry})=>{
             events: {
                 "entityClick":function(evt,data)
                     {
-                        console.log(`${data.label} was clicked`)
-                        console.log(data)
+                        
                         if(data.value)
                         {
                             if(data.label==="United Arab Emirates")
@@ -130,13 +129,9 @@ const Runs=({data,country})=>{
 
 
 const Continent = (props)=>{
-   // const[continents, setContinents]=useState({})
+  
     const[continent,setContinent]=useState('asia')
-   // const[continentData,setContinentData]=useState({}) //continents[continent]
     const[country,setCountry]=useState('Bangladesh')
-   // const[countries,setCountries]=useState({})
-
-
     const style={"display":"flex","justifyContent":"space-around","marginTop":"30px"}
  
 
