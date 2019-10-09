@@ -56,11 +56,6 @@ csv()
              data=d;
             win_ratio= parse(data)
         }) 
-        
-
-csv()
-    .fromFile('./spec_sheet.csv')
-    .then((d)=>spec=d)  ;  
 
 csv()
     .fromFile('./asia.csv')
