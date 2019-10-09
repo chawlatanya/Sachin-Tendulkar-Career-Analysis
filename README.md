@@ -1,4 +1,4 @@
-# sachin
+# Career Analysis Of Sachin Tendulkar
 A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)
 ## Getting Started
 Clone the repository
@@ -22,15 +22,15 @@ An analysis of all the centuries (half, full and double) is represented using a 
 A Bar Graph summarising the result of all the matches he has played (Country-Wise)\
 A Pie Chart giving the gist of total wins he has had in his career.\
 ### Libraries Used\
-FusionCharts
-ReCharts
-Redux
-React
-Axios
+- FusionCharts
+- ReCharts
+- Redux
+- React
+- Axios
 ### Built With\
-Express - Web framework for Nodejs\
-Node.js - JavaScript Runtime\
-Redux - A JavaScript library for State Management\
-React - A JavaScript library for building UI Components
-React-Bootstrap - A front-end frameork for react
+- Express - Web framework for Nodejs\
+- Node.js - JavaScript Runtime\
+- Redux - A JavaScript library for State Management\
+- React - A JavaScript library for building UI Components
+- React-Bootstrap - A front-end frameork for react
 
