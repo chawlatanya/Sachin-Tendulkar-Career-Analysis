@@ -1,5 +1,5 @@
 # sachin
-A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)\
+A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)
 ## Getting Started
 Clone the repository
 ### Prerequisites
@@ -12,7 +12,7 @@ Run node server\
 ```node server.js```
 Run the React Application
 ```npm start```
-The application opens up in the browser.
+The application opens up in the browser.<br/>
 Each country he has ever played with (except Bermuda) is marked with a color that represents his Win Ratio(%) against that country.
 Win Ratio is calculated using the formula : (No. of Wins/Total matches played against a nation) X 100  
 Clicking on a marked country in the map shows its corresponding year-wise batting score analysis.
