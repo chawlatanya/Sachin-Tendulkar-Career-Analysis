@@ -1,5 +1,5 @@
 # Career Analysis Of Sachin Tendulkar
-A dasboard analysing Sachin Tendulkar's legendary career, built using React.js(frontend), Express.js(backend) and Redux(state management)
+A dasboard analysing Sachin Tendulkar's legendary career, built using React.js, Express.js and Redux
 ## Getting Started
 Clone the repository
 ### Prerequisites
