@@ -1,10 +1,11 @@
 import React , {useEffect} from 'react';
 import { connect } from 'react-redux';
-import Plot from 'react-plotly.js'
+import createPlotlyComponent from 'react-plotly.js/factory'
 import { getHistogramData } from '../actions/dataActions';
 import Card from 'react-bootstrap/Card';
 
-
+const Plotly = window.Plotly;
+const Plot = createPlotlyComponent(Plotly);
 
 const Histogram=(props)=>{
    

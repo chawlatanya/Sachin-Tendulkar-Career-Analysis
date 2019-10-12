@@ -12,15 +12,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import sachin from './sachin.jpg'; 
+import sachin from './sachin1.jpg'; 
 import Button from 'react-bootstrap/Button'
 import Card from  'react-bootstrap/Card'
 
 const Home=({show})=>{
 
   return(
-    <Card style={{ width: '40rem' ,"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)",margin:"0 auto",verticalAlign:"middle",marginTop:"0.5%"}}>
-        <Card.Img variant="top" src={sachin} fluid rounded height={600} />
+    <Card style={{ width: '40rem' ,"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)",margin:"0 auto",marginTop:"2.5%"}}>
+        <Card.Img variant="top" src={sachin} fluid rounded height={550} />
         <Card.Body style={{fontSize:"20px"}}>
            <Card.Title style={{fontSize:"35px"}}>Sachin Tendulkar</Card.Title> 
           <Card.Text>

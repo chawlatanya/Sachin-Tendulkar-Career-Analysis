@@ -37,7 +37,7 @@ const CountryData=(props)=>{
             <center style={{fontFamily: 'Crimson Text, serif'}}><h2>Country-Wise Performance Analysis</h2></center>
         </Card.Header> 
         <Card.Body>  
-            <BarChart width={920} height={550} data={props.countryData} >
+            <BarChart width={920} height={550} barCategoryGap={10} data={props.countryData} >
             <XAxis dataKey="country" interval={0} tick={<CustomizedAxisTick/>}>
             </XAxis>
             <YAxis>
