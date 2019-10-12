@@ -200,7 +200,7 @@ app.get('/histogram-data',(req,res)=>{
     })
     call_range(r);
     res.send(runs);
-    console.log(runs)
+    //console.log(runs)
 })
 
 app.get("/get-stats",(req,res)=>{
@@ -233,7 +233,7 @@ app.get("/get-stats",(req,res)=>{
             total[2]++;
         }
         total[3]++;
-        console.log(total[5])
+       // console.log(total[5])
         if(runs)
         total[5]+=runs
     }
@@ -257,7 +257,7 @@ app.get('/century-analysis',(req,res)=>{
     data.forEach((d)=>{
         let year=d.date.split('').slice(-4).join('')
         let runs;
-        console.log(d.batting_score)
+      //  console.log(d.batting_score)
         if(d.batting_score!=="DNB" || d.batting_score!=="TDNB")
         {
             if(d.batting_score.indexOf('*')===-1)         
@@ -332,7 +332,7 @@ app.get('/pie-chart-2',(req,res)=>{
             if(d.batting_score.indexOf('*')!==-1)
             {
                 result[0]=result[0]+1;
-                console.log(d.batting_score)
+              //  console.log(d.batting_score)
             }
             else
                 result[1]=result[1]+1      
