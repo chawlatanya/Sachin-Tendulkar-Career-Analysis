@@ -179,7 +179,7 @@ return(
             <Map id="map" data={props.continents} continent={continent} setCountry={setCountry}/> 
             
           <Card.Footer>
-            <h6>Check out the year-wise batting score Analysis of each country by clicking on it.</h6>
+            <h6>Check out the year-wise Batting Score Analysis of each country by clicking on it.</h6>
           </Card.Footer>
     </Card> 
     </Col>
