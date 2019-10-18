@@ -131,12 +131,9 @@ const Continent = (props)=>{
   
     const[continent,setContinent]=useState('asia')
     const[country,setCountry]=useState('Bangladesh')
-    
-  useEffect(()=>{
-    props.getContinentData()
-  },[])
 
   useEffect(()=>{
+    props.getContinentData()
     props.getCountryData()
   },[])
   const mapCountryToContinent={
@@ -196,9 +193,9 @@ return(
 
 )}
 
-const mapStateToData=state=>({
+const mapStateToProps=state=>({
   ...state,
   countries:state.data.countries,
   continents:state.data.continents
 })
-export default connect(mapStateToData,{getContinentData,getCountryData})(Continent);
+export default connect(mapStateToProps,{getContinentData,getCountryData})(Continent);

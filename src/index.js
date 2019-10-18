@@ -50,7 +50,7 @@ const App=()=>{
                 <Stats/>
               </Row>
               <Row style={{marginTop:"20px"}}>
-              <Continent/>
+                <Continent/>
               </Row> 
               <Row style={{marginTop:"20px"}}> 
                 <Col><Histogram/></Col>
