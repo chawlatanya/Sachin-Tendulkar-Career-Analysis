@@ -199,7 +199,7 @@ app.get('/histogram-data',(req,res)=>{
     })
     call_range(r);
     res.send(runs);
-    console.log(runs.length)
+   // console.log(runs)
 })
 
 app.get("/get-stats",(req,res)=>{
