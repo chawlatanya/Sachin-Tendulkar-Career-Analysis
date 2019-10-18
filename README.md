@@ -33,5 +33,5 @@ Install node
 - Node.js - JavaScript Runtime
 - Redux - A JavaScript library for State Management
 - React - A JavaScript library for building UI Components
-- React-Bootstrap - A front-end frameork for react
+- React-Bootstrap - A front-end framework for react
 
