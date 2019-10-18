@@ -1,4 +1,4 @@
-import React , {useState,useEffect} from 'react';
+import React , {useEffect} from 'react';
 import { getCountryStats } from "../actions/dataActions"
 import { connect } from 'react-redux';
 import {XAxis, YAxis, Tooltip, Legend, Label,BarChart, Bar} from 'recharts';

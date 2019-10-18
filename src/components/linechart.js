@@ -1,9 +1,9 @@
-import React , {useState,useEffect} from 'react';
+import React , {useEffect} from 'react';
 import  { getLineData } from '../actions/dataActions';
 import { connect } from 'react-redux';
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts';
  import Card from 'react-bootstrap/Card'
-import axios from 'axios';
+
 
 const style={
         margin:-10,

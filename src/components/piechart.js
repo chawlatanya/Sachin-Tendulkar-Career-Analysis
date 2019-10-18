@@ -1,4 +1,4 @@
-import React , {useState ,useEffect} from 'react';
+import React , {useEffect} from 'react';
 import { getPieData } from '../actions/dataActions'
 import { connect } from 'react-redux';
 import Card from 'react-bootstrap/Card';

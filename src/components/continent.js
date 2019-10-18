@@ -13,8 +13,7 @@ import Column2D from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';   
 import {ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts' 
 import Nav from 'react-bootstrap/Nav'
-import Card, { CardBody } from 'react-bootstrap/Card'
-import Container from 'react-bootstrap/Container'
+import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 ReactFC.fcRoot(FusionCharts, FusionMaps,Asia,Europe,Africa,Oceania,NorthAmericaWCaribbean, FusionTheme, Column2D);
@@ -132,9 +131,7 @@ const Continent = (props)=>{
   
     const[continent,setContinent]=useState('asia')
     const[country,setCountry]=useState('Bangladesh')
-    const style={"display":"flex","justifyContent":"space-around","marginTop":"30px"}
- 
-
+    
   useEffect(()=>{
     props.getContinentData()
   },[])
