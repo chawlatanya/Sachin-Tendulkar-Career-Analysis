@@ -1,4 +1,4 @@
-import React , {useState,useEffect} from 'react';
+import React , {useState} from 'react';
 import store from './store.js'
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
@@ -8,7 +8,7 @@ import LineGraph from './components/linechart';
 import PieChart from './components/piechart.js';
 import CountryData from'./components/countrydata.js';
 import Continent from './components/continent.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
