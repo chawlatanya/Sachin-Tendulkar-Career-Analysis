@@ -6,7 +6,6 @@ app.use(cors())
 
 let csv=require("csvtojson");
 let data=[];
-let spec=[];
 let asia_spec=[];
 let oceania_spec=[];
 let europe_spec=[];
@@ -168,8 +167,8 @@ app.get('/country-data',(req,res)=>{
     res.send(runs)  
 })
 
-let range=[0,0]
-const call_range=(x)=>range=x;
+ let range=[0,0]
+ const call_range=(x)=>range=x;
 
 app.get('/get-range',(req,res)=>(res.send(range)));
 
@@ -177,10 +176,10 @@ app.get('/histogram-data',(req,res)=>{
 
     let runs=[],r=[0,0];
     data.forEach(d=>{
-        if(d.batting_score==="DNB" || d.batting_score==="TDNB")
-        runs.push(0);
-        else
-        {
+        if(d.batting_score!=="DNB" && d.batting_score!=="TDNB")
+        //runs.push(0);
+        //else
+        {{
              if(d.batting_score.indexOf('*')===-1) {   
                  runs.push(Number.parseInt(d.batting_score));
                 if(runs[runs.length-1]>=50)r[0]++;
@@ -196,11 +195,11 @@ app.get('/histogram-data',(req,res)=>{
                   else r[1]++;
 
                 }
-        }
+        }}
     })
     call_range(r);
     res.send(runs);
-    //console.log(runs)
+    console.log(runs.length)
 })
 
 app.get("/get-stats",(req,res)=>{
