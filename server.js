@@ -180,11 +180,14 @@ app.get('/histogram-data',(req,res)=>{
         //runs.push(0);
         //else
         {{
-             if(d.batting_score.indexOf('*')===-1) {   
+             if(d.batting_score.indexOf('*')===-1){   
                  runs.push(Number.parseInt(d.batting_score));
                 if(runs[runs.length-1]>=50)r[0]++;
                 else
-                r[1]++;
+                    { 
+                        r[1]++;
+                        runs.pop()
+                    }
                 }
             else
                 {
@@ -192,7 +195,7 @@ app.get('/histogram-data',(req,res)=>{
                   x.splice(x.indexOf('*'),1);
                   runs.push(Number.parseInt(x.join('')));
                   if(runs[runs.length-1]>=50)r[0]++;
-                  else r[1]++;
+                  else { r[1]++; runs.pop()}
 
                 }
         }}
@@ -323,7 +326,7 @@ app.get('/pie-chart-1',(req,res)=>{
     res.send(response)
 })
 
-app.get('/pie-chart-2',(req,res)=>{
+app.get('/pie-chart-2',(req,res)=>{ //all the matches in which he was not out
 
     let result=[0,0] //won lost tied
     data.forEach((d)=>{

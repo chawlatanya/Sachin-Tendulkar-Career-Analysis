@@ -30,7 +30,7 @@ const Histogram=(props)=>{
         width: 500, 
         height: 500,
         bargap: 0.05, 
-        title: 'Distribution of Runs Scored', 
+       // title: 'Distribution of Runs Scored', 
         xaxis:{title:'Runs'},
         yaxis:{title:'Count'},
         dragmode:false
